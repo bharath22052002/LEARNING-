@@ -1,0 +1,30 @@
+package calculator.Methodoverloading;
+
+import java.util.Scanner;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the first number");
+		byte a=scan.nextByte();
+		System.out.println("Enter the second number");
+	    byte b=scan.nextByte();
+	    byte res=calculate(a,b);
+	    System.out.println("Enter the first number");
+		short val1=scan.nextShort();
+		System.out.println("Enter the second number");
+	    short val2=scan.nextShort();
+	    short result=calculate(val1,val2);
+		}
+	
+	
+	public static byte calculate(byte a,byte b)
+	{
+		byte c=a+b;
+		return c;
+	}
+
+	
+    
+}

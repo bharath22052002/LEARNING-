@@ -1,0 +1,17 @@
+package com.Switch.condition;
+
+public class While 
+{
+
+	public static void main(String[] args) 
+	{
+		   int num=1;
+			do
+				{ 
+				System.out.println("BHARATH1");
+				
+				}
+			while(num<=5);
+	}
+
+}

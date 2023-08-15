@@ -1,0 +1,35 @@
+package calculator.Methodoverloading;
+
+import java.util.Scanner;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int operator=scan.nextInt();
+		System.out.println("Result:"+calculate());
+		int res=calculate();
+		}
+	
+	
+	public static int calculate()
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the first number");
+		int a=scan.nextInt();
+		System.out.println("Enter the second number");
+	    int b=scan.nextInt();
+		return a+b;
+	}
+	public static int calculate(int sub1,int sub2) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the first number");
+		int val1=scan.nextInt();
+		System.out.println("Enter the second number");
+	    int val2=scan.nextInt();
+		int c=sub1-sub2;
+	    return c;
+	}
+	
+    
+}

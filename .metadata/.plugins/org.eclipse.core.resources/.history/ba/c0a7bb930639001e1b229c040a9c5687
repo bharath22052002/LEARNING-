@@ -1,0 +1,38 @@
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class TemperatureConversion {
+	public static void main(String[] args) {
+	System.out.println("Welcome to the Temperature Conversion Tool!");
+	
+    Scanner scan=new Scanner(System.in);
+    System.out.println("Enter your choice");
+    int choice=scan.nextInt();
+    switch(choice)
+    {
+    case 1:
+    	System.out.println("Enter the temperature in Celsius:");
+        double celsius=scan.nextDouble();
+    	double result=celsiusToFahrenheit(celsius);
+    	System.out.println(result);
+    	break;
+    case 2:
+    	System.out.println("Enter the temperature in Fahrenheit");
+    	double Fahrenheit=scan.nextDouble();
+    	double res=fahrenheitToCelsius(Fahrenheit);
+    	System.out.println(res);
+    	break;
+    }
+}
+	public static double celsiusToFahrenheit(double celsius)
+	{
+		double fah=((celsius*9/5) + 32);
+		return fah;
+	}
+	public static double fahrenheitToCelsius(double fahrenheit)
+	{
+		double res=((fahrenheit-32)*5/9);
+		return res;
+	}
+}

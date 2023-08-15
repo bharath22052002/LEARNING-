@@ -1,0 +1,21 @@
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class LogicalOperatorValidator {
+
+	public static void main(String[] args) 
+	{
+	Scanner scan=new Scanner(System.in);
+	boolean a=scan.nextBoolean();
+	boolean b=scan.nextBoolean();
+	System.out.println("Is input valid (true/false)");
+	scan.close();
+	}
+	public static boolean isValidInput(boolean one,boolean two) {
+	return one|one;
+	}
+	
+}
+
+

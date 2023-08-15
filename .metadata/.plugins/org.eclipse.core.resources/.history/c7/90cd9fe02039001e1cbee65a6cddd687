@@ -1,0 +1,14 @@
+package practiceprograms;
+
+public class LogicalOperatorValidator {
+
+	public static void main(String[] args) {
+    int num1=10;
+    int num2=15;
+	}
+	public static void isValidInput(boolean num1,boolean num2) {
+	boolean answer=num1==num2;
+	System.out.println(answer);
+	}
+
+}

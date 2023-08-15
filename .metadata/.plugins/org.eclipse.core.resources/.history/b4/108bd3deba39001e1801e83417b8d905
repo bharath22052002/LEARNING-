@@ -1,0 +1,53 @@
+package calculator.Methodoverloading;
+
+import java.util.Scanner;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the first number");
+		byte a=scan.nextByte();
+		System.out.println("Enter the second number");
+	    byte b=scan.nextByte();
+	    int res=calculate(a,b);
+	    System.out.println("Enter the first number");
+		short val1=scan.nextShort();
+		System.out.println("Enter the second number");
+	    short val2=scan.nextShort();
+	    int result=calculate(val1,val2);
+	    System.out.println("Enter the first number");
+		int mul1=scan.nextInt();
+		System.out.println("Enter the second number");
+	    int mul2=scan.nextInt();
+	    int multiplication=calculate(mul1,mul2);
+	    System.out.println("Enter the first number");
+		long d1=scan.nextLong();
+		System.out.println("Enter the second number");
+	    long d2=scan.nextLong();
+	    long division=calculate(d1,d2);
+	    scan.close();
+		}
+	
+	
+	public static int calculate(byte a,byte b)
+	{
+		int c;
+		c=a+b;
+		return c;
+	}
+	public static int calculate(short sub1,short sub2)
+	{
+		return sub1-sub2;
+	}
+	public static int calculate(int mul1,int mul2)
+	{
+		return mul1*mul2;
+	}
+	public static long calculate(long div1,long div2)
+	{
+		return div1/div2;
+	}
+	
+    
+}

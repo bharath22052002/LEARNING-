@@ -1,0 +1,14 @@
+package practiceprograms;
+
+public class LogicalOperatorValidator {
+
+	public static void main(String[] args) 
+	{
+		boolean a=true;
+		boolean b=false;
+	}
+	public static void isValidInput(boolean a,boolean false) {
+		
+	}
+}
+

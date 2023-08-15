@@ -1,0 +1,16 @@
+package practiceprograms;
+
+public class LogicalOperatorValidator {
+
+	public static void main(String[] args) 
+	{
+	boolean a=true;
+	boolean b=false;
+	isValidInput(a,b);
+	}
+	public static void isValidInput(boolean one,boolean two) {
+	System.out.println(one&two);
+	}
+}
+
+
